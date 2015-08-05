@@ -1,7 +1,7 @@
 # echiquier
 exercice pratique angular.js
 
-# enoncé:
+#### enoncé:
 Pour mémoire un échiquier :
 - contient 64 (8x8) cases
 - contient en alternance des cases blanches et des cases noires
