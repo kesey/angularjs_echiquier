@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #000000;
+    color: #dddddd;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+.wrapper{
+    height: 100%;
+}
+
+.echiquier{
+    height: 80%;
+    width: 65%;
+    margin: auto;
+}
+
+.buttonBorder{
+    border: 1px solid #ffffff;
+}
+
+/*----------------------------------------------*\
+    animations utilisant les transitions CSS3
+\*----------------------------------------------*/
+
+.trans.ng-enter, .trans.ng-leave{
+    -webkit-transition-duration: .5s;
+    -webkit-transition-property: height,opacity,transform;
+    -moz-transition-duration: .5s;
+    -moz-transition-property: height,opacity,transform;
+    -o-transition-duration: .5s;
+    -o-transition-property: height,opacity,transform;
+    transition-duration: .5s;
+    transition-property: height,opacity,transform;
+}
+
+.trans.ng-enter{
+    opacity: 0;
+    transform: translateX(40px);
+    height: 0px;
+}
+
+.trans.ng-enter-active{
+    opacity: 1;
+    transform: translateX(0px);
+    height: 50px;
+}
+
+.trans.ng-leave{
+    height: 50px;
+}
+
+.trans.ng-leave-active{
+    height: 0px;
+    opacity: 0;
+    transform: translateX(-40px);
+}
+
+/*--------------------------------------*\
+            Fin des animations
+\*--------------------------------------*/
