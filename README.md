@@ -1,5 +1,5 @@
 # echiquier
-exercice pratique angular.js
+deuxième exercice pratique angular.js
 
 #### enoncé:
 Pour mémoire un échiquier :
