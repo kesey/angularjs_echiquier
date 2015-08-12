@@ -9,11 +9,14 @@
 </style>
 <table class="table table-bordered echiquier">
     <caption>
+<!-------------------------------------------------------Redimensionnement de l'echiquier------------------------------>
         <button class="btn btn-lg btn-success buttonBorder" type="button" ng-click="addDimension()">+</button>
         <button class="btn btn-lg btn-danger buttonBorder" type="button" ng-click="removeDimension()">-</button>
+<!-------------------------------------------------------Changement des couleurs des cases----------------------------->
         <button class="btn btn-lg odd buttonBorder" colorpicker colorpicker-close-on-select ng-model="oddColor">Change odd color</button>
         <button class="btn btn-lg even buttonBorder" colorpicker colorpicker-close-on-select ng-model="evenColor">Change even color</button>
     </caption>
+<!-------------------------------------------------------Echiquier----------------------------------------------------->
     <tbody>
         <tr ng-repeat="dimension in dimensions" ng-switch="{{$odd}}" class="trans">
             <td ng-switch-when="true" ng-repeat="dimension in dimensions" ng-class-odd="'odd'" ng-class-even="'even'" class="trans"></td>
